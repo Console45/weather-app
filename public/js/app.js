@@ -7,7 +7,7 @@ const errorp = document.querySelector('#errorp');
 searchForm.addEventListener('submit', (e) => {
 	let address = input.value;
 	e.preventDefault();
-	fetch('http://localhost:3000/weather?address=' + address)
+	fetch('/weather?address=' + address)
 		.then((res) => {
 			switch (res.ok) {
 				case true:
