@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title><%= title %> </title>
+</head>
+
+<body>
+    <header>
+       
+        <% if (title) { %>
+            <h1><%= title %></h1>
+        <% } %>
+    
+        <a href="/">Weather</a>
+        <a href="/about">About</a>
+        <a href="/help">Help</a>
+    </header>
+    <div class="main-content">
